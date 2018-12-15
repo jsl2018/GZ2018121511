@@ -1,0 +1,26 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1544784779503" stop="1544784779504">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1544784779503" status="broken" stop="1544784779503">
+      <name>test_login</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>test_login.py:18: in &lt;module&gt;
+    class TestLogin():
+test_login.py:27: in TestLogin
+    @pytest.mark.parametrize("username, password", get_data())
+test_login.py:14: in get_data
+    for data in ReadLoginYaml("data_login.yaml").read_login_yaml().values():
+..\base\base_read_data.py:10: in read_login_yaml
+    with open(self.failname, "r", encoding="utf-8") as f:
+E   FileNotFoundError: [Errno 2] No such file or directory: 'E:\\上课资料\\13.移动端\\PYTEST练习\\scripts\\data\\data_login.yaml'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
