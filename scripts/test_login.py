@@ -32,4 +32,3 @@ class TestLogin():
         self.login.page_input_password(password)
         self.login.page_click_denglu()
         print(get_data())
-        print("test001被执行了)
